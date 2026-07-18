@@ -1,3 +1,10 @@
+/**
+ * @author ShumonX
+ * @see salesforceben.com/the-salesforce-trigger-handler-framework
+ * @since 28 February 2022
+ * @version 1.0
+ * 
+ */
 trigger AccountTrigger on Account
 (
 	before insert, before update, before delete,
