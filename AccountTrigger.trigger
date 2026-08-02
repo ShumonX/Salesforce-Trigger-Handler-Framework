@@ -1,5 +1,5 @@
 /**
- * @author ShumonX 🦚
+ * @author ShumonX 🦚🪷🧘🏻‍♂️
  * @see salesforceben.com/the-salesforce-trigger-handler-framework
  * @since 28 February 2022
  * @version 2.0: Moved the "Run All Triggers" Org-Specific Setting checkbox ✅
