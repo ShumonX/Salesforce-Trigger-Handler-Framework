@@ -5,7 +5,6 @@
  * @version 2.0: Moved the "Run All Triggers" Org-Specific Setting checkbox ✅
  * from Custom Metadata Type to a Custom Setting because its records should NOT
  * be deployable, completely indepenent, and manually set.
- * 
  */
 trigger AccountTrigger on Account
 (
