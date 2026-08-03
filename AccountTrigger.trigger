@@ -1,5 +1,5 @@
 /**
- * @author ShumonX 🦚🪷🧘🏻‍♂️
+ * @author ShumonX 🦚
  * @see salesforceben.com/the-salesforce-trigger-handler-framework
  * @since 28 February 2022
  * @version 2.0: Moved the "Run All Triggers" Org-Specific Setting checkbox ✅
@@ -14,8 +14,8 @@ trigger AccountTrigger on Account
 {
     /*
      * Using Safe Navigation Operator (?.) and Null Coalescing Operator (??) so
-     * that this Trigger by default runs by default even when the Org-Specific
-     * Custom Setting doesn't have a "Default Organization Level Value" set.
+     * that Triggers run by default even when the Org-Specific Custom Setting 
+     * doesn't have a "Default Organization Level Value".
      */
     if (Org_Specific_Custom_Setting__c.getInstance()?.Run_All_Triggers__c ?? true)
     {
