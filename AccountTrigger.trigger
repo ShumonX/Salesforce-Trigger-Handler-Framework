@@ -13,9 +13,9 @@ trigger AccountTrigger on Account
 )
 {
     /*
-     * Using Safe Navigation Operator (?.) and Null Coalescing Operator (??) so
+     * Using Safe Navigation Operator (?.) AND Null Coalescing Operator (??) so
      * that Triggers run by default even when the Org-Specific Custom Setting 
-     * doesn't have a "Default Organization Level Value".
+     * doesn't have a "Default Organization Level Value" set.
      */
     if (Org_Specific_Custom_Setting__c.getInstance()?.Run_All_Triggers__c ?? true)
     {
