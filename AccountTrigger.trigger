@@ -1,6 +1,7 @@
 /**
  * @author ShumonX 🦚
- * @see salesforceben.com/the-salesforce-trigger-handler-framework
+ * @see https://www.salesforceben.com/the-salesforce-trigger-handler-framework
+ * @see https://bit.ly/sf-coding-standards
  * @since 28 February 2022
  * @version 2.0: Moved the "Run All Triggers" Org-Specific Setting checkbox ✅
  * from Custom Metadata Type to a Custom Setting because its records should NOT
