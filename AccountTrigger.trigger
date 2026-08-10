@@ -20,6 +20,15 @@ trigger AccountTrigger on Account
      */
     if (Org_Specific_Custom_Setting__c.getInstance()?.Run_All_Triggers__c ?? true)
     {
+        /*
+         * here put the whole trigger framework content inside this "if" here, that's ugly...
+         * Just simply exit if the run all triggers is triggers. Easy 😉
+         */
+    }
+    else if (Org_Specific_Custom_Setting__c.getInstance()?.Run_All_Triggers__c == false)
+    {
+        return;
+    }
         TriggerHandler handler = new AccountTriggerHandler(Trigger.isExecuting, Trigger.size);
         switch on Trigger.operationType
         {
