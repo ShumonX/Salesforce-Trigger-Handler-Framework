@@ -21,45 +21,44 @@ trigger AccountTrigger on Account
     if (Org_Specific_Custom_Setting__c.getInstance()?.Run_All_Triggers__c ?? true)
     {
         /*
-         * here put the whole trigger framework content inside this "if" here, that's ugly...
-         * Just simply exit if the run all triggers is triggers. Easy 😉
+         * Don't put the whole trigger framework inside this "if" here, that's ugly...
+         * Just simply exit if Run_All_Triggers__c is "false". Easy 😉
          */
     }
     else if (Org_Specific_Custom_Setting__c.getInstance()?.Run_All_Triggers__c == false)
     {
         return;
     }
-        TriggerHandler handler = new AccountTriggerHandler(Trigger.isExecuting, Trigger.size);
-        switch on Trigger.operationType
+    TriggerHandler handler = new AccountTriggerHandler(Trigger.isExecuting, Trigger.size);
+    switch on Trigger.operationType
+    {
+        when BEFORE_INSERT
         {
-            when BEFORE_INSERT
-            {
-                // handler.beforeInsert(Trigger.new);
-            }
-            when BEFORE_UPDATE
-            {
-                // handler.beforeUpdate(Trigger.old, Trigger.new, Trigger.oldMap, Trigger.newMap);
-            }
-            when BEFORE_DELETE
-            {
-                // handler.beforeDelete(Trigger.old, Trigger.oldMap);
-            }
-            when AFTER_INSERT
-            {
-                // handler.afterInsert(Trigger.new, Trigger.newMap);
-            }
-            when AFTER_UPDATE
-            {
-                // handler.afterUpdate(Trigger.old, Trigger.new, Trigger.oldMap, Trigger.newMap);
-            }
-            when AFTER_DELETE
-            {
-                // handler.afterDelete(Trigger.old, Trigger.oldMap);
-            }
-            when AFTER_UNDELETE
-            {
-                // handler.afterUndelete(Trigger.new, Trigger.newMap);
-            }
+            // handler.beforeInsert(Trigger.new);
+        }
+        when BEFORE_UPDATE
+        {
+            // handler.beforeUpdate(Trigger.old, Trigger.new, Trigger.oldMap, Trigger.newMap);
+        }
+        when BEFORE_DELETE
+        {
+            // handler.beforeDelete(Trigger.old, Trigger.oldMap);
+        }
+        when AFTER_INSERT
+        {
+            // handler.afterInsert(Trigger.new, Trigger.newMap);
+        }
+        when AFTER_UPDATE
+        {
+            // handler.afterUpdate(Trigger.old, Trigger.new, Trigger.oldMap, Trigger.newMap);
+        }
+        when AFTER_DELETE
+        {
+            // handler.afterDelete(Trigger.old, Trigger.oldMap);
+        }
+        when AFTER_UNDELETE
+        {
+            // handler.afterUndelete(Trigger.new, Trigger.newMap);
         }
     }
 }
