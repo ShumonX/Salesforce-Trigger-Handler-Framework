@@ -26,6 +26,9 @@ trigger AccountTrigger on Account
         return;
     }
     
+    /*
+     * The main part of our Trigger Handler Framework
+     */
     TriggerHandler handler = new AccountTriggerHandler(Trigger.isExecuting, Trigger.size);
     switch on Trigger.operationType
     {
