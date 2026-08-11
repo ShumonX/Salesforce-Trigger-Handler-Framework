@@ -20,10 +20,6 @@ trigger AccountTrigger on Account
      */
     if (Org_Specific_Custom_Setting__c.getInstance()?.Run_All_Triggers__c ?? true)
     {
-        /*
-         * Don't put the whole trigger framework inside this "if" here, that's ugly...
-         * Just simply exit if Run_All_Triggers__c is "false". Easy 😉
-         */
     }
     else if (Org_Specific_Custom_Setting__c.getInstance()?.Run_All_Triggers__c == false)
     {
