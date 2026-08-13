@@ -1,5 +1,5 @@
 /**
- * A simple Salesforce Trigger Handler Framework 🛠️
+ * A simple Salesforce Trigger Handler Framework 🛠️👨‍💻
  * @author  Shumon Saha
  * @see     salesforceben.com/the-salesforce-trigger-handler-framework
  * @see     bit.ly/sf-coding-standards
