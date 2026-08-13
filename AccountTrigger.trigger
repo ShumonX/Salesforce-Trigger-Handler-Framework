@@ -1,9 +1,10 @@
 /**
+ * A simple Salesforce Trigger Handler Framework 🛠️
  * @author  Shumon Saha
  * @see     salesforceben.com/the-salesforce-trigger-handler-framework
  * @see     bit.ly/sf-coding-standards
  * @since   28 February 2022
- * @version 3.0: A simple Salesforce Trigger Handler Framework.
+ * @version 3.0: Moved the Switch outside the If-block, to avoid nesting.
  * ⚠️ Don't forget to un-comment your required lines of code ⚠️
  */
 
