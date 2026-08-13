@@ -6,8 +6,8 @@
  */
 trigger AccountTrigger on Account
 (
-    before insert, before update, before delete,
-     after insert,  after update,  after delete,  after undelete
+    /* before insert, */ /* before update, */ /* before delete, */
+    /*  after insert, */ /*  after update, */ /*  after delete, */ /*  after undelete */
 )
 {
     if (Org_Specific_Custom_Setting__c.getInstance()?.Run_All_Triggers__c == false)
