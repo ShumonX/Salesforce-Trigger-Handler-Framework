@@ -6,6 +6,7 @@
  * @version 3.0: A simple Salesforce Trigger Handler Framework.
  * ⚠️ Don't forget to un-comment your required lines of code ⚠️
  */
+
 trigger AccountTrigger on Account
 (
     before insert, before update, before delete,
