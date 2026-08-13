@@ -4,7 +4,6 @@
  * @see     bit.ly/sf-coding-standards
  * @since   28 February 2022
  * @version 3.0: A simple Salesforce Trigger Handler Framework.
- * 
  * ⚠️ Don't forget to uncomment the required lines of code ⚠️
  */
 trigger AccountTrigger on Account
