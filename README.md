@@ -1,6 +1,6 @@
 # Salesforce-trigger-framework
 A simple Salesforce trigger handler framework.
 
-Link to my article on Salesforce Ben:
+See: https://www.salesforceben.com/the-salesforce-trigger-handler-framework/
 
-https://www.salesforceben.com/the-salesforce-trigger-handler-framework/
+Use Custom Settings
