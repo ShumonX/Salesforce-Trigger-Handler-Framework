@@ -18,6 +18,7 @@ trigger AccountTrigger on Account
     }
     
     TriggerHandler handler = new AccountTriggerHandler(Trigger.isExecuting, Trigger.size);
+    
     switch on Trigger.operationType
     {
         when BEFORE_INSERT
