@@ -1,5 +1,5 @@
 /**
- * @author ShumonX
+ * @author Shumon Saha
  * @see salesforceben.com/the-salesforce-trigger-handler-framework
  * @see bit.ly/sf-coding-standards
  * @since 28 February 2022
