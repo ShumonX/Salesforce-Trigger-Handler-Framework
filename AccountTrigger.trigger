@@ -4,7 +4,7 @@
  * @see     salesforceben.com/the-salesforce-trigger-handler-framework
  * @see     bit.ly/sf-coding-standards
  * @since   28 February 2022
- * @version 3.0: Moved the Switch outside the If-block, reducing nesting.
+ * @version 3.0: Moved the Switch outside the If-block, to reduce nesting.
  * ⚠️ Don't forget to un-comment your required lines of code ⚠️
  */
 
