@@ -5,6 +5,8 @@
  * @see     bit.ly/sf-coding-standards
  * @since   28 February 2022
  * @version 3.0: Moved the Switch outside the If-block, to reduce nesting.
+ *.              Exits early when the Run All Triggers Custom Setting is set and explicitly unchecked.
+                 Otherwise, runs by default even when the Custom Setting is not set, i.e., doesn't have an Organisation Default Value.
  * ⚠️ Don't forget to un-comment your required lines of code ⚠️
  */
 
