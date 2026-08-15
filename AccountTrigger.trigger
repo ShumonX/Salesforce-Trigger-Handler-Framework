@@ -23,7 +23,7 @@ trigger AccountTrigger on Account
 )
 {
     /*
-     * GUARD CLAUSE: Exits immediately ONLY & ONLY IF the Org_Specific_Custom_Setting__c has a value and Run_All_Triggers__c checkbox is explicitly unchecked/unticked.
+     * GUARD CLAUSE: Exit immediately if Run_All_Triggers__c is explicitly unchecked.
      */
     if (Org_Specific_Custom_Setting__c.getInstance()?.Run_All_Triggers__c == false)
     {
@@ -32,8 +32,7 @@ trigger AccountTrigger on Account
     
     /*
      * The main part of our Trigger Handler Framework:
-     * Runs by default even if Org_Specific_Custom_Setting__c doesn't have a value, not even an Organization Default Value set,
-     * or of course, if the Custom Setting has a value and the Run All Triggers checkbox is checked/ticked ✅
+     * Runs by default, even if Org_Specific_Custom_Setting__c doesn't have a value.
      */
     TriggerHandler handler = new AccountTriggerHandler(Trigger.isExecuting, Trigger.size);
     switch on Trigger.operationType
