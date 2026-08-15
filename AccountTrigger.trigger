@@ -11,8 +11,8 @@
  * @version 2.2: Strictly enforced the 80 column limit so our eyes don't have to
  * scan from left-to-right 👀
  * @version 3.0: Moved the Switch outside the If-block, to reduce nesting.
- *.              Exits early when the Run All Triggers Custom Setting is set and explicitly unchecked/unticked.
-                 Otherwise, runs by default even when the Custom Setting is not set, i.e., doesn't have an Organisation Default Value.
+ *               Exits early when the Run All Triggers Custom Setting is set and explicitly unchecked/unticked.
+ *               Otherwise, runs by default even when the Custom Setting is not set, i.e., doesn't have an Organisation Default Value.
  * ⚠️ Don't forget to un-comment your required lines of code ⚠️
  */
 
