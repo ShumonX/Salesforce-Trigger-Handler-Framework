@@ -23,7 +23,7 @@ trigger AccountTrigger on Account
 )
 {
     /*
-     * GUARD CLAUSE: Exit immediately if Run_All_Triggers__c is explicitly unchecked.
+     * GUARD CLAUSE: Exit immediately if Run_All_Triggers__c is NOT null AND unchecked.
      */
     if (Org_Specific_Custom_Setting__c.getInstance()?.Run_All_Triggers__c == false)
     {
