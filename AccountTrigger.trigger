@@ -23,7 +23,11 @@ trigger AccountTrigger on Account
 )
 {
     /*
-     * GUARD CLAUSE: Exit immediately if Org_Specific_Custom_Setting__c.getInstance() is NOT null (safe navigation operator "?.") AND Run_All_Triggers__c is unchecked (== false).
+     * GUARD CLAUSE: Exit immediately if Org_Specific_Custom_Setting__c is NOT null AND Run_All_Triggers__c is unchecked.
+     * 
+     * Uses Safe Navigation Operator (?.)
+     * @see developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_SafeNavigationOperator.htm
+     * @see en.wikipedia.org/wiki/Safe_navigation_operator
      */
     if (Org_Specific_Custom_Setting__c.getInstance()?.Run_All_Triggers__c == false)
     {
