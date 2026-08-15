@@ -32,7 +32,7 @@ trigger AccountTrigger on Account
     
     /*
      * The main part of our Trigger Handler Framework:
-     * Runs by default, even if Org_Specific_Custom_Setting__c doesn't have a value.
+     * Runs by default, even if Org_Specific_Custom_Setting__c isn't set.
      */
     TriggerHandler handler = new AccountTriggerHandler(Trigger.isExecuting, Trigger.size);
     switch on Trigger.operationType
