@@ -32,7 +32,7 @@ trigger AccountTrigger on Account
     }
     
     /*
-     * The main part of our Trigger Handler Framework.
+     * 🌟 The main part of our Trigger Handler Framework.
      * Runs by default, i.e., even if Org_Specific_Custom_Setting__c.getInstance() is null.
      */
     TriggerHandler handler = new AccountTriggerHandler(Trigger.isExecuting, Trigger.size);
