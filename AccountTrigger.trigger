@@ -66,5 +66,5 @@ trigger AccountTrigger on Account
         {
             // handler.afterUndelete(Trigger.new, Trigger.newMap);
         }
-    }       /* End of Switch  */
-}           /* End of Trigger */
+    }       /* 🔚 End of Switch  */
+}           /* 🔚 End of Trigger */
