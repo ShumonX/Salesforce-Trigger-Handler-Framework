@@ -6,7 +6,7 @@
  * @since   28 February 2022
  * @version 2.0: Moved the "Run All Triggers" from Custom Metadata Type to Custom Setting,
                  because its records should NOT be deployable, completely indepenent, and manually set.
- * @version 2.2: Strictly enforced the 80 column limit so our eyes don't have to scan from left-to-right 👀
+ * @version 2.2: 👀 Strictly enforced the 80 column limit so our eyes don't have to scan from left-to-right 👀
  * @version 3.0: 🪺 Implemented a clean Guard Clause to exit early, keep logic flat, and reduce nesting 🪺
  * 
  * ⚠️ Don't forget to un-comment your required lines of code ⚠️
