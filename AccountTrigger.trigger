@@ -4,15 +4,10 @@
  * @see     salesforceben.com/the-salesforce-trigger-handler-framework
  * @see     bit.ly/sf-coding-standards
  * @since   28 February 2022
- * @version 2.0: Moved the "Run All Triggers" Org-Specific Setting checkbox ✅
- * from Custom Metadata Type to a Custom Setting because its records should NOT
- * be deployable, completely indepenent, and manually set.
- * @version 2.1: Implemented a clean Guard Clause to exit early &keep logic flat
+ * @version 2.0: Moved the "Run All Triggers" from Custom Metadata Type to a Custom Setting because its records should NOT be deployable, completely indepenent, and manually set.
  * @version 2.2: Strictly enforced the 80 column limit so our eyes don't have to
  * scan from left-to-right 👀
- * @version 3.0: Moved the Switch outside the If-block, to reduce nesting.
- *               Exits early when the Run All Triggers Custom Setting is set and explicitly unchecked/unticked.
- *               Otherwise, runs by default even when the Custom Setting is not set, i.e., doesn't have an Organisation Default Value.
+ * @version 3.0: Implemented a clean Guard Clause to exit early, keep logic flat, and reduce nesting.
  * ⚠️ Don't forget to un-comment your required lines of code ⚠️
  */
 
