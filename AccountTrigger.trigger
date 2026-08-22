@@ -17,7 +17,7 @@ trigger AccountTrigger on Account
 )
 {
     /*
-     * GUARD CLAUSE: Exit immediately if Run_All_Triggers__c is unchecked.
+     * GUARD CLAUSE: Exit immediately if "Run All Triggers" is unchecked.
      * Uses Safe Navigation Operator (?.)
      */
     if (Org_Specific_Custom_Setting__c.getInstance()?.Run_All_Triggers__c == false)
@@ -27,7 +27,7 @@ trigger AccountTrigger on Account
     
     /*
      * The main part of our Trigger Handler Framework.
-     * Runs by default, i.e., even if Org_Specific_Custom_Setting__c.getInstance() is null.
+     * Runs by default, i.e., even if "Org-Specific Custom Setting" is null.
      */
     TriggerHandler handler = new AccountTriggerHandler(Trigger.isExecuting, Trigger.size);
     switch on Trigger.operationType
