@@ -4,10 +4,8 @@
  * @see     salesforceben.com/the-salesforce-trigger-handler-framework
  * @see     bit.ly/sf-coding-standards
  * @since   28 February 2022
- * @version 2.0: Moved the "Run All Triggers" from Custom Metadata Type to Custom Setting,
-                 because its records should NOT be deployable, completely indepenent, and manually set.
- * @version 2.2: 👀 Strictly enforced the 80 column limit so our eyes don't have to scan from left-to-right 👀
- * @version 3.0: 🪺 Implemented a clean Guard Clause to exit early, keep logic flat, and reduce nesting 🪺
+ * @version 2.0: Moved the "Run All Triggers" from Custom Metadata Type to Custom Setting, because its records should NOT be deployable, completely indepenent, and manually set.
+ * @version 3.0: Implemented a clean Guard Clause to exit early, keep logic flat, and reduce nesting.
  * 
  * ⚠️ Don't forget to un-comment your required lines of code ⚠️
  */
@@ -19,7 +17,7 @@ trigger AccountTrigger on Account
 )
 {
     /*
-     * 💂‍♀️🛑✋⛔ GUARD CLAUSE: Exit immediately if Run_All_Triggers__c is unchecked.
+     * GUARD CLAUSE: Exit immediately if Run_All_Triggers__c is unchecked.
      * Uses Safe Navigation Operator (?.)
      */
     if (Org_Specific_Custom_Setting__c.getInstance()?.Run_All_Triggers__c == false)
@@ -28,7 +26,7 @@ trigger AccountTrigger on Account
     }
     
     /*
-     * 🌟 The main part of our Trigger Handler Framework.
+     * The main part of our Trigger Handler Framework.
      * Runs by default, i.e., even if Org_Specific_Custom_Setting__c.getInstance() is null.
      */
     TriggerHandler handler = new AccountTriggerHandler(Trigger.isExecuting, Trigger.size);
