@@ -4,7 +4,7 @@
  * @see     salesforceben.com/the-salesforce-trigger-handler-framework
  * @see     bit.ly/sf-coding-standards
  * @since   28 February 2022
- * @version 2.0: Moved the "Run All Triggers" from Custom Metadata Type to Custom Setting, because its records should NOT be deployable, completely indepenent, and manually set.
+ * @version 2.0: Moved "Run All Triggers" from Custom Metadata Type to Custom Setting, because its records should NOT be deployable, completely independent, and manually set.
  * @version 3.0: Implemented a clean Guard Clause to exit early, keep logic flat, and reduce nesting.
  * 
  * ⚠️ Don't forget to un-comment your required lines of code ⚠️
