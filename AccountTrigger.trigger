@@ -39,31 +39,31 @@ trigger AccountTrigger on Account
     TriggerHandler handler = new AccountTriggerHandler(Trigger.isExecuting, Trigger.size);
     switch on Trigger.operationType
     {
-        when BEFORE_INSERT
+        when BEFORE_INSERT   /* 1 of 7 */
         {
             // handler.beforeInsert(Trigger.new);
         }
-        when BEFORE_UPDATE
+        when BEFORE_UPDATE   /* 2 of 7 */
         {
             // handler.beforeUpdate(Trigger.old, Trigger.new, Trigger.oldMap, Trigger.newMap);
         }
-        when BEFORE_DELETE
+        when BEFORE_DELETE   /* 3 of 7 */
         {
             // handler.beforeDelete(Trigger.old, Trigger.oldMap);
         }
-        when AFTER_INSERT
+        when AFTER_INSERT    /* 4 of 7 */
         {
             // handler.afterInsert(Trigger.new, Trigger.newMap);
         }
-        when AFTER_UPDATE
+        when AFTER_UPDATE    /* 5 of 7 */
         {
             // handler.afterUpdate(Trigger.old, Trigger.new, Trigger.oldMap, Trigger.newMap);
         }
-        when AFTER_DELETE
+        when AFTER_DELETE    /* 6 of 7 */
         {
             // handler.afterDelete(Trigger.old, Trigger.oldMap);
         }
-        when AFTER_UNDELETE
+        when AFTER_UNDELETE  /* 7 of 7 */
         {
             // handler.afterUndelete(Trigger.new, Trigger.newMap);
         }
