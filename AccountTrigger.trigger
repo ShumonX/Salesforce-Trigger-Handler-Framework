@@ -10,6 +10,7 @@
  * and most importantly… reduce nesting 🪺
  * 
  * ⚠️ Don't forget to un-comment your required lines of code ⚠️
+ * ⚠️      in line numbers: 45, 49, 53, 57, 61, 65, 69       ⚠️
  */
 
 trigger AccountTrigger on Account
