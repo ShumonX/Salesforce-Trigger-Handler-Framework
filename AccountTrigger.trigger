@@ -14,8 +14,13 @@
 
 trigger AccountTrigger on Account
 (
-    before insert, before update, before delete,
-     after insert,  after update,  after delete,  after undelete
+    before insert,  /* 1 of 7 */
+    before update,  /* 2 of 7 */
+    before delete,  /* 3 of 7 */
+     after insert,  /* 4 of 7 */
+     after update,  /* 5 of 7 */
+     after delete,  /* 6 of 7 */
+     after undelete /* 7 of 7 */
 )
 {
     /*
