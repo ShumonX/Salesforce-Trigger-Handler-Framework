@@ -14,7 +14,7 @@
 
 trigger AccountTrigger on Account
 (
-    before insert,    /* 1 of 7 */
+    before insert,    /* 1️⃣🕐 of 7 */
     before update,    /* 2 of 7 */
     before delete,    /* 3 of 7 */
      after insert,    /* 4 of 7 */
