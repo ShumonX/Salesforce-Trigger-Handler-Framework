@@ -14,13 +14,13 @@
 
 trigger AccountTrigger on Account
 (
-    before insert,    /* 1️⃣ of 7 */
-    before update,    /* 2️⃣ of 7 */
-    before delete,    /* 3️⃣ of 7 */
-     after insert,    /* 4️⃣ of 7 */
-     after update,    /* 5️⃣ of 7 */
-     after delete,    /* 6️⃣ of 7 */
-     after undelete   /* 7️⃣ of 7 */
+    before insert,    /* 🕐 1️⃣ of 7 */
+    before update,    /* 🕑 2️⃣ of 7 */
+    before delete,    /* 🕒 3️⃣ of 7 */
+     after insert,    /* 🕓 4️⃣ of 7 */
+     after update,    /* 🕔 5️⃣ of 7 */
+     after delete,    /* 🕕 6️⃣ of 7 */
+     after undelete   /* 🕖 7️⃣ of 7 */
 )
 {
     /*
