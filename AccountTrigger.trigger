@@ -7,7 +7,7 @@
  * @version 2.0: Moved "Run All Triggers" from Custom Metadata Type to Custom Setting,
  * because its records should NOT be deployable, completely independent, and manually set.
  * @version 3.0: Implemented a clean Guard Clause to exit early, keep logic flat,
- * and most importantly — reduce nesting 🪺
+ * and most importantly — reduce nesting/indentation 🪺
  * 
  * ⚠️ Don't forget to un-comment your required lines of code ⚠️
  * ⚠️    in line numbers: 45, 49, 53, 57, 61, 65, and 69.    ⚠️
