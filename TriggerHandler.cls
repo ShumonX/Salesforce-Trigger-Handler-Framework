@@ -1,4 +1,6 @@
 /**
+ * This is a Java Interface (not related to user interface).
+ * 
  * @author  Shumon Saha
  * @see     salesforceben.com/the-salesforce-trigger-handler-framework
  * @see     https://en.wikipedia.org/wiki/Interface_(Java)
