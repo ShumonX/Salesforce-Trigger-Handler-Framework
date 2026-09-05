@@ -12,7 +12,7 @@
  * and most importantly — reduce nesting 🪺
  * 
  * ⚠️ Don't forget to un-comment your required lines of code ⚠️
- * ⚠️    in line numbers: 45, 49, 53, 57, 61, 65, and 69.    ⚠️
+ * ⚠️    in line numbers: 48, 53, 58, 63, 68, 73, and 78.    ⚠️
  */
 
 trigger AccountTrigger on Account
@@ -44,32 +44,37 @@ trigger AccountTrigger on Account
     {
         when BEFORE_INSERT   // 1 of 7
         {
-            // 👇 Un-comment BELOW line when needed. Do not delete THIS line.
+            // 👇 Un-comment BELOW line if needed. Do not delete THIS line 🛑
             // handler.beforeInsert(Trigger.new);
         }
         when BEFORE_UPDATE   // 2 of 7
         {
-            // 👇 Un-comment BELOW line when needed. Do not delete THIS line.
+            // 👇 Un-comment BELOW line if needed. Do not delete THIS line 🛑
             // handler.beforeUpdate(Trigger.old, Trigger.new, Trigger.oldMap, Trigger.newMap);
         }
         when BEFORE_DELETE   // 3 of 7
         {
+            // 👇 Un-comment BELOW line if needed. Do not delete THIS line 🛑
             // handler.beforeDelete(Trigger.old, Trigger.oldMap);
         }
         when AFTER_INSERT    // 4 of 7
         {
+            // 👇 Un-comment BELOW line if needed. Do not delete THIS line 🛑
             // handler.afterInsert(Trigger.new, Trigger.newMap);
         }
         when AFTER_UPDATE    // 5 of 7
         {
+            // 👇 Un-comment BELOW line if needed. Do not delete THIS line 🛑
             // handler.afterUpdate(Trigger.old, Trigger.new, Trigger.oldMap, Trigger.newMap);
         }
         when AFTER_DELETE    // 6 of 7
         {
+            // 👇 Un-comment BELOW line if needed. Do not delete THIS line 🛑
             // handler.afterDelete(Trigger.old, Trigger.oldMap);
         }
         when AFTER_UNDELETE  // 7 of 7
         {
+            // 👇 Un-comment BELOW line if needed. Do not delete THIS line 🛑
             // handler.afterUndelete(Trigger.new, Trigger.newMap);
         }
     }       // 🔚 End of Switch
