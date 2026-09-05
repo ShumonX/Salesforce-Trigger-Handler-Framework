@@ -32,7 +32,7 @@ trigger AccountTrigger on Account
      */
     if (Org_Specific_Custom_Setting__c.getInstance()?.Run_All_Triggers__c == false)
     {
-        return; // 🚶‍♂️🚪
+        return; // 🚶‍♂️🚪⛔
     }
     
     /*
