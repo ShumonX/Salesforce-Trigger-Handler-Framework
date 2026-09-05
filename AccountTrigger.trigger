@@ -37,11 +37,11 @@ trigger AccountTrigger on Account
      */
     if (Org_Specific_Custom_Setting__c.getInstance()?.Run_All_Triggers__c == false)
     {
-        return; // 👹
+        return; // 👹✋👺
     }
     
     /*
-     * 🌟 The main part of our Trigger Handler Framework.
+     * 🌟👽🤖 The main part of our Trigger Handler Framework.
      * Runs by default, i.e., even if "Org-Specific Custom Setting" above, was null.
      */
     TriggerHandler handler = new AccountTriggerHandler(Trigger.isExecuting, Trigger.size);
