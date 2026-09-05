@@ -1,4 +1,4 @@
-in*
+/**
  * A simple Salesforce Trigger Handler Framework... 🛠️👨‍💻
  * 
  * Salesforce newbies often jump into writing multiple triggers on the same object.
