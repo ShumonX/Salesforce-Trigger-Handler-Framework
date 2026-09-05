@@ -1,5 +1,10 @@
 /**
- * A simple Salesforce Trigger Handler Framework 🛠️👨‍💻
+ * A simple Salesforce Trigger Handler Framework... 🛠️👨‍💻
+ * 
+ * Salesforce newbies often jump into writing multiple triggers on the same object.
+ * Later, they realize that they can’t control which trigger runs first.
+ * A simple Trigger Handler Framework can control the order of execution.
+ * It’s simply a rule of keeping strictly one (☝) trigger per object.
  * 
  * @author  Shumon Saha <https://www.salesforce.com/trailblazer/shumon>
  * @see     SalesforceBen <salesforceben.com/the-salesforce-trigger-handler-framework>
