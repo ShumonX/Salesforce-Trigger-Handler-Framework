@@ -41,7 +41,7 @@ trigger AccountTrigger on Account
     }
     
     /*
-     * 🌟👽🤖 The main part of our Trigger Handler Framework.
+     * 🌟 The main part of our Trigger Handler Framework.
      * Runs by default, i.e., even if "Org-Specific Custom Setting" above, was null.
      */
     TriggerHandler handler = new AccountTriggerHandler(Trigger.isExecuting, Trigger.size);
@@ -49,37 +49,37 @@ trigger AccountTrigger on Account
     {
         when BEFORE_INSERT   // 1 of 7
         {
-            // 👇 Un-comment BELOW line if needed. Do not delete THIS line 🛑
+            // 👇 Un-comment BELOW line IF needed. Do not delete THIS line 🛑
             // handler.beforeInsert(Trigger.new);
         }
         when BEFORE_UPDATE   // 2 of 7
         {
-            // 👇 Un-comment BELOW line if needed. Do not delete THIS line 🛑
+            // 👇 Un-comment BELOW line IF needed. Do not delete THIS line 🛑
             // handler.beforeUpdate(Trigger.old, Trigger.new, Trigger.oldMap, Trigger.newMap);
         }
         when BEFORE_DELETE   // 3 of 7
         {
-            // 👇 Un-comment BELOW line if needed. Do not delete THIS line 🛑
+            // 👇 Un-comment BELOW line IF needed. Do not delete THIS line 🛑
             // handler.beforeDelete(Trigger.old, Trigger.oldMap);
         }
         when AFTER_INSERT    // 4 of 7
         {
-            // 👇 Un-comment BELOW line if needed. Do not delete THIS line 🛑
+            // 👇 Un-comment BELOW line IF needed. Do not delete THIS line 🛑
             // handler.afterInsert(Trigger.new, Trigger.newMap);
         }
         when AFTER_UPDATE    // 5 of 7
         {
-            // 👇 Un-comment BELOW line if needed. Do not delete THIS line 🛑
+            // 👇 Un-comment BELOW line IF needed. Do not delete THIS line 🛑
             // handler.afterUpdate(Trigger.old, Trigger.new, Trigger.oldMap, Trigger.newMap);
         }
         when AFTER_DELETE    // 6 of 7
         {
-            // 👇 Un-comment BELOW line if needed. Do not delete THIS line 🛑
+            // 👇 Un-comment BELOW line IF needed. Do not delete THIS line 🛑
             // handler.afterDelete(Trigger.old, Trigger.oldMap);
         }
         when AFTER_UNDELETE  // 7 of 7
         {
-            // 👇 Un-comment BELOW line if needed. Do not delete THIS line 🛑
+            // 👇 Un-comment BELOW line IF needed. Do not delete THIS line 🛑
             // handler.afterUndelete(Trigger.new, Trigger.newMap);
         }
     }       // 🔚 End of Switch
