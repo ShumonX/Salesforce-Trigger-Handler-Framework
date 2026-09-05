@@ -44,10 +44,12 @@ trigger AccountTrigger on Account
     {
         when BEFORE_INSERT   // 1 of 7
         {
+            // 👇 Un-comment BELOW line when needed. Do not delete THIS line.
             // handler.beforeInsert(Trigger.new);
         }
         when BEFORE_UPDATE   // 2 of 7
         {
+            // 👇 Un-comment BELOW line when needed. Do not delete THIS line.
             // handler.beforeUpdate(Trigger.old, Trigger.new, Trigger.oldMap, Trigger.newMap);
         }
         when BEFORE_DELETE   // 3 of 7
