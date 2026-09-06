@@ -17,7 +17,7 @@
  * and most importantly — reduce nesting 🪺
  * 
  * ⚠️ Don't forget to un-comment your required lines of code ⚠️
- * ⚠️    in line numbers: 48, 53, 58, 63, 68, 73, and 78.    ⚠️
+ * ⚠️    in line numbers: 53, 58, 63, 68, 73, 78, and 83.    ⚠️
  */
 
 trigger AccountTrigger on Account
