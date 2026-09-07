@@ -115,7 +115,7 @@ trigger AccountTrigger on Account // 🏢🏣🏤
  * before anything else can be written. Because everything is dependent on this.
  */
 
-public interface TriggerHandlerJavaInterface
+public interface TriggerHandler
 {
     /*
      * ⏪ All "BEFORE" function-headers ⏪
