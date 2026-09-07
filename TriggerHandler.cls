@@ -14,14 +14,14 @@
 public interface TriggerHandler
 {
     /*
-     * ⏪ All "BEFORE" function-headers ⏪
+     * ◀️ All "BEFORE" function-headers ◀️
      */
     void beforeInsert(List <SObject>newRecordss);
     void beforeUpdate(List<SObject> oldRecords, List<SObject> newRecords, Map<ID, SObject> oldRecordMap, Map<ID, SObject> newRecordMap);
     void beforeDelete(List<SObject> oldRecords, Map<ID, SObject> oldRecordMap);
     
     /*
-     * ⏩ All "AFTER" function-headers ⏩
+     * ▶️ All "AFTER" function-headers ▶️
      */
     void afterInsert(List<SObject> newRecords, Map<ID, SObject> newRecordMap);
     void afterUpdate(List<SObject> oldRecords, List<SObject> newRecords, Map<ID, SObject> oldRecordMap, Map<ID, SObject> newRecordMap);
