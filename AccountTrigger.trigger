@@ -20,7 +20,7 @@
  * ⚠️    in line numbers: 53, 58, 63, 68, 73, 78, and 83.    ⚠️
  */
 
-trigger AccountTrigger on Account
+trigger AccountTrigger on Account // 🏢🏣🏤
 (
     before insert,    // 1 of 7
     before update,    // 2 of 7
