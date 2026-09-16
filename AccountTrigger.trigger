@@ -34,6 +34,7 @@ trigger AccountTrigger on Account // 🏢🏣🏤
     /*
      * 👹 GUARD CLAUSE: Exit immediately if "Run All Triggers" is unchecked.
      * @see https://en.wikipedia.org/wiki/Guard_(computer_science)
+     * 
      * Also, uses the Safe Navigation Operator (?.) 🛡️🦺
      * @see https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_SafeNavigationOperator.htm
      * @see https://en.wikipedia.org/wiki/Safe_navigation_operator
