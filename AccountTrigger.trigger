@@ -31,13 +31,13 @@ trigger AccountTrigger on Account // 🏢🏣🏤
      after undelete   // 7 of 7
 )
 {
-    /*
+    /**
      * 👹 GUARD CLAUSE: Exit immediately if "Run All Triggers" is unchecked.
-     * @see https://en.wikipedia.org/wiki/Guard_(computer_science)
+     * @see Wikipedia <en.wikipedia.org/wiki/Guard_(computer_science)>
      * 
      * Also, uses the Safe Navigation Operator (?.) 🛡️🦺
-     * @see https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_SafeNavigationOperator.htm
-     * @see https://en.wikipedia.org/wiki/Safe_navigation_operator
+     * @see developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_SafeNavigationOperator.htm
+     * @see Wikipedia <en.wikipedia.org/wiki/Safe_navigation_operator>
      */
     if (Org_Specific_Custom_Setting__c.getInstance()?.Run_All_Triggers__c == false)
     {
