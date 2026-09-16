@@ -33,11 +33,11 @@ trigger AccountTrigger on Account // 🏢🏣🏤
 {
     /**
      * 👹 GUARD CLAUSE: Exit immediately if "Run All Triggers" is unchecked.
-     * @see en.wikipedia.org/wiki/Guard_(computer_science)
+     * @see 🔗 en.wikipedia.org/wiki/Guard_(computer_science)
      * 
      * Also, uses the Safe Navigation Operator (?.) 🛡️🦺
-     * @see developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_SafeNavigationOperator.htm
-     * @see en.wikipedia.org/wiki/Safe_navigation_operator
+     * @see 🔗 developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_SafeNavigationOperator.htm
+     * @see 🔗 en.wikipedia.org/wiki/Safe_navigation_operator
      */
     if (Org_Specific_Custom_Setting__c.getInstance()?.Run_All_Triggers__c == false)
     {
