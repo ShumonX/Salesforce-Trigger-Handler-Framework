@@ -1,6 +1,6 @@
 # A simple Salesforce trigger handler framework 👨‍💻🛠
 
-See 🔗 [Salesforce Trigger Handler Framework | SalesforceBen](https://www.salesforceben.com/the-salesforce-trigger-handler-framework/)
+See my article on SalesforceBen 🔗 [Salesforce Trigger Handler Framework](https://www.salesforceben.com/the-salesforce-trigger-handler-framework/)
 
 ## AccountTrigger.trigger 🏢🏣🏤
 
