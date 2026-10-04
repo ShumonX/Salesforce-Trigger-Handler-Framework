@@ -16,15 +16,15 @@ public interface TriggerHandler
     /*
      * ⏪ All “BEFORE” function-headers ⏪
      */
-    void beforeInsert(List <SObject>newRecordss);
-    void beforeUpdate(List<SObject> oldRecords, List<SObject> newRecords, Map<ID, SObject> oldRecordMap, Map<ID, SObject> newRecordMap);
-    void beforeDelete(List<SObject> oldRecords, Map<ID, SObject> oldRecordMap);
+    void beforeInsert(List <SObject>newRecordss);                                 // 1 of 7
+    void beforeUpdate(List<SObject> oldRecords, List<SObject> newRecords, Map<ID, SObject> oldRecordMap, Map<ID, SObject> newRecordMap);    // 2 of 7
+    void beforeDelete(List<SObject> oldRecords, Map<ID, SObject> oldRecordMap);   // 3 of 7
     
     /*
      * ⏩ All “AFTER” function-headers ⏩
      */
-    void afterInsert(List<SObject> newRecords, Map<ID, SObject> newRecordMap);
-    void afterUpdate(List<SObject> oldRecords, List<SObject> newRecords, Map<ID, SObject> oldRecordMap, Map<ID, SObject> newRecordMap);
-    void afterDelete(List<SObject> oldRecords, Map<ID, SObject> oldRecordMap);
-    void afterUndelete(List<SObject> newRecords, Map<ID, SObject> newRecordMap);
+    void afterInsert(List<SObject> newRecords, Map<ID, SObject> newRecordMap);    // 4 of 7
+    void afterUpdate(List<SObject> oldRecords, List<SObject> newRecords, Map<ID, SObject> oldRecordMap, Map<ID, SObject> newRecordMap);    // 5 of 7
+    void afterDelete(List<SObject> oldRecords, Map<ID, SObject> oldRecordMap);    // 6 of 7
+    void afterUndelete(List<SObject> newRecords, Map<ID, SObject> newRecordMap);  // 7 of 7    
 }
