@@ -22,7 +22,9 @@ public interface TriggerHandler
     void beforeUpdate(List<SObject> oldRecords, List<SObject> newRecords, Map<ID, SObject> oldRecordMap, Map<ID, SObject> newRecordMap);    // 2 of 7
     // 3️⃣ 3 of 7
     void beforeDelete(List<SObject> oldRecords, Map<ID, SObject> oldRecordMap);   // 3 of 7
-    // 🔚🚪 End of ⏪ All “BEFORE” function-headers ⏪
+    /*
+     * 🔚🚪 End of ⏪ All “BEFORE” function-headers ⏪
+     */
     
     /*
      * ⏩ All “AFTER” function-headers ⏩
@@ -35,5 +37,7 @@ public interface TriggerHandler
     void afterDelete(List<SObject> oldRecords, Map<ID, SObject> oldRecordMap);    // 6 of 7
     // 7️⃣ 7 of 7
     void afterUndelete(List<SObject> newRecords, Map<ID, SObject> newRecordMap);  // 7 of 7
-    // 🔚🚪 End of ⏩ All “AFTER” function-headers ⏩
+    /*
+     * 🔚🚪 End of ⏩ All “AFTER” function-headers ⏩
+     */
 }
