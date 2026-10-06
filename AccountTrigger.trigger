@@ -6,14 +6,14 @@
  * A simple Trigger Handler Framework solves this problem.
  * It’s simply a rule of keeping strictly one (☝) trigger per object.
  * 
- * @author  Shumon Saha <https://www.salesforce.com/trailblazer/shumon>
- * @see     SalesforceBen <salesforceben.com/the-salesforce-trigger-handler-framework>
- * @see     SF Coding Standards <bit.ly/sf-coding-standards>
- * @since   28 February 2022
- * @version 1.0: I wrote for SalesforceBen.com
- * @version 2.0: Moved "Run All Triggers" from Custom Metadata Type to Custom Setting,
+ * @author  ✍️ Shumon Saha <https://www.salesforce.com/trailblazer/shumon>
+ * @see     🔗 SalesforceBen <salesforceben.com/the-salesforce-trigger-handler-framework>
+ * @see     🔗 SF Coding Standards <bit.ly/sf-coding-standards>
+ * @since   🗓️ 28 February 2022
+ * @version 1️⃣ 1.0: I wrote for SalesforceBen.com
+ * @version 2️⃣ 2.0: Moved "Run All Triggers" from Custom Metadata Type to Custom Setting,
  * because its records should NOT be deployable, completely independent, and manually set.
- * @version 3.0: Implemented a clean Guard Clause to exit early, keep logic flat,
+ * @version 3️⃣ 3.0: Implemented a clean Guard Clause to exit early, keep logic flat,
  * and most importantly — reduce nesting 🪺
  * 
  * ⚠️ Don't forget to un-comment your required lines of code ⚠️
