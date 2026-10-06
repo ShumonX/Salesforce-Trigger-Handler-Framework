@@ -1,12 +1,12 @@
 /**
  * This is a Java™☕ Interface (nothing related to user interface, I mean, not even remotely close).
  * 
- * @author  Shumon Saha
- * @see     salesforceben.com/the-salesforce-trigger-handler-framework
- * @see     https://en.wikipedia.org/wiki/Interface_(Java)
- * @see     https://en.wikipedia.org/wiki/Interface_(object-oriented_programming)
- * @since   28 February 2022
- * @version 1.0: Part of a simple Salesforce Trigger Handler Framework.
+ * @author  👨🏻‍💻 Shumon Saha
+ * @see     🔗 salesforceben.com/the-salesforce-trigger-handler-framework
+ * @see     🤓 https://en.wikipedia.org/wiki/Interface_(Java)
+ * @see     🕵🏻‍♂️ https://en.wikipedia.org/wiki/Interface_(object-oriented_programming)
+ * @since   🗓️ 28 February 2022
+ * @version 1️⃣ 1.0: Part of a simple Salesforce Trigger Handler Framework.
  * A Java Interface. This is the first code file to be written,
  * before anything else can be written. Because everything is dependent on this.
  */
