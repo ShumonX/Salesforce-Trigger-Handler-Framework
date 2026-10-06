@@ -1,5 +1,5 @@
 /**
- * This is a Java™☕ Interface (not related to user interface).
+ * This is a Java™☕ Interface (nothing related to user interface, I mean, not even remotely close).
  * 
  * @author  Shumon Saha
  * @see     salesforceben.com/the-salesforce-trigger-handler-framework
